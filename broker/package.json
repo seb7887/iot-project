@@ -1,0 +1,19 @@
+{
+  "name": "broker",
+  "version": "1.0.0",
+  "description": "MQTT Mosca Broker",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "NODE_ENV=production node src/index.js"
+  },
+  "author": "Sebastian Matias Segura (@seb7887)",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "mosca": "^2.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

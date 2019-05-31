@@ -1,0 +1,27 @@
+{
+  "name": "micro-functions",
+  "version": "1.0.0",
+  "description": "Micro functions",
+  "main": "dist/index.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "tsc",
+    "dev": "npm run build && concurrently \"tsc --watch\" \"micro-dev\"",
+    "dev:start": "npm run build && micro-dev",
+    "prestart": "npm run build",
+    "start": "micro"
+  },
+  "author": "Sebastian Matias Segura (@seb7887)",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "micro-dev": "^3.0.0",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "@types/micro": "^7.3.3",
+    "@types/node": "^12.0.4",
+    "micro": "^9.3.4",
+    "mqtt": "^3.0.0"
+  }
+}
